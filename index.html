@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizar Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div id="card-login-container">
+        <img src="./Pictures/logo.png" alt="logo Uni Play" id="logo">
+        <h1>Faça login ou registre-se</h1>
+        <div id="card-login">
+            <header>
+                <h2 id="form-title">Faça login</h2>
+            </header>
+            <form id="register-form">
+                <input type="text" name="Nome" id="name" placeholder="Nome" required>
+                <input type="number" name="Whatsapp" id="whatsapp" placeholder="Whatsapp com DDD" required>
+                <input type="email" name="E-mail" id="email" placeholder="E-mail" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <form id="login-form" style="display:none;">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <div class="login-prompt" id="prompt-container">
+                <span id="prompt-text">Não tem um cadastro? </span><a href="#" id="toggle-link">Registre-se.</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="script.js"></script>
+    <div id="copy">&copy2024, Todos os direitos reservados.</div>
+</body>
+</html>
